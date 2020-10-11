@@ -5,6 +5,10 @@
   </head>
   <body>
     <input type="text" placeholder="Search porkphorus..." id="project" min="1"><button type="button" onclick="window.location.hash = '#'+document.getElementById('project').value; window.location.reload();">Load</button>
-    <iframe src="https://forkphorus.github.io/embed.html?id=" + project + "&auto-start=true&light-content=false" width="482" height="393" allowfullscreen="true" allowtransparency="true" style="border:none;"></iframe>
+    <iframe id="showskill" scrolling="yes" height="350" width ="350" src=""></iframe>
+    <script>
+      document.getElementById("showskill").src =
+              "https://forkphorus.github.io/embed.html?id="+ project + "&auto-start=true&light-content=false" width="482" height="393" allowfullscreen="true" allowtransparency="true" style="border:none;"();
+    </script>
   </body>
   </html>
